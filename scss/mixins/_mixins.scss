@@ -1,0 +1,76 @@
+@mixin font-h1 {
+  color: var(--White);
+  font-family: "Playfair Display";
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6.8rem;
+}
+@mixin font-h2 {
+  color: var(--White);
+  font-family: "Playfair Display";
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.8rem;
+}
+@mixin font-h3 {
+  color: var(--White);
+  font-family: "Playfair Display";
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.8rem;
+}
+@mixin font-h4 {
+  color: var(--White);
+  font-family: "Playfair Display";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+}
+@mixin font-paragraph-no-opacity {
+  color: var(--Colour-100);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  opacity: 0.6;
+}
+@mixin font-paragraph-opacity {
+  color: var(--Colour-100);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  opacity: 0.6;
+}
+@mixin label-p {
+  color: var(--White);
+  font-family: "Playfair Display";
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4.8rem;
+}
+@mixin label-med {
+  color: var(--White);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  opacity: 0.87;
+}
+@mixin label-extra-small {
+  color: var(--White);
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6rem;
+  opacity: 0.6;
+}
