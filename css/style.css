@@ -6,6 +6,16 @@
   --Section-bg: #19161b;
 }
 
+.header-nav-link {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding: 0px;
+}
+
+.navbar-logo {
+  margin-right: 0;
+}
+
 :root {
   --White: #fff;
   --Colour-100: #b8b8b8;
