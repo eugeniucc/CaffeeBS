@@ -38,3 +38,17 @@
 .navbar .custom-navbar-toggler:focus {
   box-shadow: none;
 }
+
+.custom-col {
+  padding: 0;
+}
+
+.custom-col-serving {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-row-serving {
+  margin-bottom: 12.8rem;
+}

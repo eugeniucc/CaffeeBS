@@ -1,0 +1,59 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/page-components/title-stick";
+
+.about {
+  padding: 8rem 0rem;
+  background-color: var(--Background);
+  &_img {
+    &-bot {
+      padding-top: 8.3rem;
+    }
+    &-top {
+      padding-bottom: 8.3rem;
+    }
+    &-wrapper {
+      gap: 6.7rem;
+      max-width: 61.3rem;
+      justify-content: flex-end;
+    }
+  }
+  &_content {
+    max-width: 61.3rem;
+    &-caption {
+      @include caption;
+      padding-bottom: 3.2rem;
+      @include title-stick;
+    }
+    &-title {
+      @include font-h2;
+    }
+    &-text {
+      @include font-paragraph-no-opacity;
+      padding: 3.2rem 0rem 4rem 0rem;
+    }
+  }
+  &_wrapper {
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    &-card {
+      max-width: 18.7rem;
+      &--flag {
+        gap: 0.7rem;
+      }
+      &--paragraph {
+        @include number1;
+      }
+      &--descr {
+        @include font-paragraph-no-opacity;
+      }
+      &--text {
+        @include font-paragraph-no-opacity;
+      }
+    }
+  }
+  &_btn {
+    @include btn;
+    gap: 0.8rem;
+  }
+}

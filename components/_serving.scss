@@ -1,0 +1,40 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/page-components/title-stick";
+
+.serving {
+  padding: 8rem 0rem;
+  background-color: var(--Background);
+  &_caption {
+    @include caption;
+    text-transform: uppercase;
+    @include title-stick;
+    display: flex;
+    align-items: center;
+  }
+  &_title {
+    @include font-h2;
+    max-width: 66rem;
+  }
+  &_text {
+    @include font-paragraph-no-opacity;
+    padding: 1.5rem 0rem 0rem 6rem;
+  }
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 7.6rem;
+  }
+  &_card {
+    max-width: 30rem;
+    width: 100%;
+    &-title {
+      @include font-h3;
+      padding: 2.4rem 0rem 1.2rem 0rem; 
+    }
+    &-text {
+      @include font-paragraph-no-opacity;
+    }
+  }
+}

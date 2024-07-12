@@ -4,16 +4,28 @@
 // COMPONENTS
 @import "../components/header";
 @import "../components/home";
+@import "../components/about";
+@import "../components/serving";
+@import "../components/menu";
 
 // MEDIA QUERIES COMPONENTS
 @import "../media-queries/media-header";
 @import "../media-queries/media-home";
+@import "../media-queries/media-about";
+@import "../media-queries/media-serving";
+@import "../media-queries/media-menu";
 
 // MIXINS
 @import "../scss/mixins/mixins";
 
 // VARIABLES
 @import "../scss/variables/variables";
+
+// ANIMATIONS
+@import "../scss/animations/btn";
+
+// PAGE COMPONENTS
+@import "../scss/page-components/title-stick";
 
 * {
   box-sizing: border-box;

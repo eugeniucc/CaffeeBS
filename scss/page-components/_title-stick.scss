@@ -1,0 +1,14 @@
+@mixin title-stick {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-bottom: 2.4rem;
+  &::after {
+    display: block;
+    content: "";
+    width: 4.8rem;
+    height: 0.1rem;
+    background-color: var(--White);
+  }
+}
