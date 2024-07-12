@@ -1,8 +1,13 @@
+// CUSTOM BS
+@import "../components/custom";
+
 // COMPONENTS
 @import "../components/header";
+@import "../components/home";
 
 // MEDIA QUERIES COMPONENTS
 @import "../media-queries/media-header";
+@import "../media-queries/media-home";
 
 // MIXINS
 @import "../scss/mixins/mixins";
@@ -10,18 +15,21 @@
 // VARIABLES
 @import "../scss/variables/variables";
 
-// FONTS
+* {
+  box-sizing: border-box;
+}
 
 // HTML
 
 html {
-  font-size: $base-font-size;
+  font-size: $font-size-base;
   scroll-behavior: smooth;
 }
 
 // CONTAINER
 
-.my_container {
+.custom_container {
   max-width: 128rem;
   margin: 0 auto;
+  padding: 0;
 }

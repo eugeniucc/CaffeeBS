@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/min_css/style.min.css" />
     <!-- GENERAL METAGRAPH -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Finsweet" />
@@ -13,7 +11,7 @@
     <meta property="og:description" content="Finsweet" />
     <meta name="description" content="Finsweet" />
     <!-- TWITTER METAGRAPH -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:custom-card" content="summary_large_image" />
     <meta property="twitter:title" content="Finsweet" />
     <meta name="twitter:image" content="./icons/" />
     <meta property="twitter:description" content="Finsweet" />
@@ -38,11 +36,11 @@
     <link rel="manifest" href="./icons/site.webmanifest" />
     <link rel="icon" href="./favicon.ico" />
     <!-- Подключение mask icon -->
-    <link
+    <!-- <link
       rel="mask-icon"
       href="./icons/safari-pinned-tab.svg"
       color="#5bbad5"
-    />
+    /> -->
     <!-- MS APP -->
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
@@ -78,6 +76,8 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap"
       rel="stylesheet"
     />
+    <!-- MY SCRIPTS -->
+    <script defer src="./js/mobile-burger.js"></script>
     <!-- MY STYLES -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
@@ -85,47 +85,142 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar navbar-expand-sm">
-        <div class="container my_container">
-          <a class="navbar-brand navbar-logo" href="#"
-            ><img src="./icons/logo.svg" alt="Finsweet"
+      <nav class="navbar navbar-expand-md custom-navbar">
+        <div class="container custom_container">
+          <a class="navbar-brand navbar-link-logo d-block" href="#"
+            ><img
+              class="navbar-logo d-block"
+              src="./icons/logo.svg"
+              alt="Finsweet"
           /></a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler custom-navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <div class="header_mobile-burger">
+              <span id="bar-1"></span>
+              <span id="bar-2"></span>
+              <span id="bar-3"></span>
+            </div>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse d-none d-md-flex"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link header-nav-link" href="#">Home</a>
+              <li class="nav-item custom-nav-item">
+                <a class="nav-link custom-nav-link" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link header-nav-link" href="#">Home</a>
+              <li class="nav-item custom-nav-item">
+                <a class="nav-link custom-nav-link" href="#">Menu</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link header-nav-link" href="#">Home</a>
+              <li class="nav-item custom-nav-item">
+                <a class="nav-link custom-nav-link" href="#">About us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link header-nav-link" href="#">Home</a>
+              <li class="nav-item custom-nav-item">
+                <a class="nav-link custom-nav-link" href="#">Our Story</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link header-nav-link" href="#">Home</a>
+              <li class="nav-item custom-nav-item">
+                <a class="nav-link custom-nav-link" href="#">Blog</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link header-nav-link" href="#">Home</a>
+              <li class="nav-item custom-nav-item">
+                <a class="nav-link custom-nav-link" href="#">Contact</a>
               </li>
             </ul>
-            <button class="btn">Clone project</button>
+            <a class="nav_btn d-flex" href="#" target="_blank"
+              >Clone project<span class="nav_btn-span"
+                ><svg
+                  width="21"
+                  height="8"
+                  viewBox="0 0 21 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5L20 4.5V3.5L0 3.5L0 4.5Z"
+                    fill="white"
+                  /></svg></span
+            ></a>
           </div>
         </div>
       </nav>
+      <div
+        class="offcanvas offcanvas-start custom-offcanvas"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            <img
+              class="custom-offcanvas-img d-block"
+              src="./icons/logo.svg"
+              alt="Finsweet"
+            />
+          </h5>
+          <button
+            type="button"
+            class="btn-close custom-burger-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+          <ul class="navbar-nav mb-auto custom-navbar-nav-offcanvas">
+            <li class="nav-item custom-nav-item">
+              <a class="nav-link custom-nav-link custom-nav-offcanvas" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item custom-nav-item">
+              <a class="nav-link custom-nav-link custom-nav-offcanvas" href="#"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item custom-nav-item">
+              <a class="nav-link custom-nav-link custom-nav-offcanvas" href="#"
+                >About us</a
+              >
+            </li>
+            <li class="nav-item custom-nav-item">
+              <a class="nav-link custom-nav-link custom-nav-offcanvas" href="#"
+                >Our Story</a
+              >
+            </li>
+            <li class="nav-item custom-nav-item">
+              <a class="nav-link custom-nav-link custom-nav-offcanvas" href="#"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item custom-nav-item">
+              <a class="nav-link custom-nav-link custom-nav-offcanvas" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <a class="nav_btn d-flex align-items-center" href="#" target="_blank"
+            >Clone project
+            <svg
+              width="21"
+              height="8"
+              viewBox="0 0 21 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5L20 4.5V3.5L0 3.5L0 4.5Z"
+                fill="black"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
     </header>
   </body>
 </html>

@@ -1,0 +1,40 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+// HEADER
+
+.custom-navbar {
+  padding: 3rem 0rem;
+}
+
+.navbar-nav {
+  gap: 4rem;
+}
+
+.navbar .navbar-link-logo {
+  padding: 0rem 5rem 0rem 0rem;
+  margin: 0;
+}
+
+.navbar-nav .nav-item .custom-nav-link {
+  padding: 0;
+  @include nav-paragraph;
+}
+.navbar-nav .nav-item .custom-nav-offcanvas {
+  color: var(--Background);
+}
+.custom-navbar-nav-offcanvas {
+  gap: 2rem;
+}
+.custom-offcanvas {
+  max-width: 27rem;
+  width: 100%;
+}
+
+.navbar .custom-navbar-toggler {
+  padding: 0;
+  border: none;
+}
+.navbar .custom-navbar-toggler:focus {
+  box-shadow: none;
+}
