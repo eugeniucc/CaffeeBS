@@ -1,6 +1,7 @@
 @mixin btn {
   padding: 1.2rem 2.4rem;
   @include label-med;
+  color: var(--Background);
   border: none;
   cursor: pointer;
   opacity: 0.6;
