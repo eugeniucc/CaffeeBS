@@ -1,3 +1,54 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 @import "../scss/page-components/title-stick";
+
+.about {
+  background-color: var(--Background);
+  padding: 8rem 0rem;
+  &_content {
+    max-width: 62.4rem;
+    &-caption {
+      @include caption;
+      @include title-stick;
+    }
+    &-title {
+      @include font-h2;
+    }
+    &-text {
+      @include font-paragraph-no-opacity;
+      padding: 3.2rem 0 4rem 0;
+    }
+  }
+  &_wrapper {
+    max-width: 62.4rem;
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    &-flag {
+      &--text {
+        @include number1;
+      }
+    }
+    &-card {
+      max-width: 18.7rem;
+
+      &--descr {
+        padding: 1.5rem 0;
+        @include font-paragraph-no-opacity;
+      }
+      &--text {
+        @include font-paragraph-no-opacity;
+      }
+    }
+  }
+  &_img {
+    &-top {
+      padding-bottom: 8.3rem;
+    }
+    &-bot {
+      padding-top: 8.3rem;
+    }
+  }
+  &_btn {
+    @include btn;
+  }
+}
