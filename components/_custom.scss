@@ -1,4 +1,28 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-// HEADER
+// HEADER DESKTOP
+
+.custom-header-padding {
+  padding: 3rem 0rem;
+}
+
+.custom-nav-link {
+  padding: 0;
+  &:hover {
+    color: var(--Orange);
+  }
+  &:focus {
+    color: var(--Orange);
+  }
+}
+.custom-nav-ul {
+  gap: 4rem;
+  padding: 0 0 0 4rem;
+}
+
+// HEADEAR MOBILE
+
+.custom-mobile-nav-ul {
+  gap: 2rem;
+}

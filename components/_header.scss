@@ -3,4 +3,16 @@
 
 .header {
   background-color: var(--Background);
+  &_copy {
+    &-link {
+      @include label-med;
+      color: var(--Orange);
+      text-decoration: none;
+      gap: 1.2rem;
+    }
+  }
+}
+
+.nav-link-font {
+  @include nav-paragraph;
 }

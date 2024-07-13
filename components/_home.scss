@@ -1,33 +1,31 @@
 @import "../scss/animations/btn";
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
 .home {
-  padding: 9.5rem 0rem 8rem 0rem;
+  padding: 9.5rem 0 8rem 0;
   background-color: var(--Background);
   &_wrapper {
-    padding: 7.4rem 0rem;
     max-width: 62.4rem;
-    &-content {
-      padding-bottom: 4rem;
-    }
     &-title {
       @include font-h1;
     }
     &-text {
-      @include font-paragraph-opacity;
-      padding: 1.6rem 0rem 3.2rem 0rem;
+      @include font-paragraph-no-opacity;
+      padding-top: 1.6rem;
     }
     &-btn {
-      @include btn;
       gap: 0.8rem;
+      @include btn;
+      margin: 3.2rem 0 4rem 0;
     }
     &-ul {
-      gap: 1.2rem;
+      gap: 1.6rem;
       &--title {
         @include font-h4;
       }
       &--text {
-        @include font-paragraph-opacity;
+        @include font-paragraph-no-opacity;
       }
     }
   }

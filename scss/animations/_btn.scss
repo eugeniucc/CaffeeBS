@@ -3,10 +3,10 @@
   @include label-med;
   color: var(--Background);
   border: none;
-  cursor: pointer;
   opacity: 0.6;
   transition: all 0.3s ease-in-out;
   background-color: var(--Colour-200);
+  max-width: 16.5rem;
   &:hover {
     opacity: 1;
   }
