@@ -1,3 +1,40 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 @import "../scss/page-components/title-stick";
+
+.menu {
+  padding: 8rem 0rem;
+  background-color: var(--Background);
+  &_caption {
+    @include caption;
+    @include title-stick;
+  }
+  &_title {
+    @include font-h2;
+    max-width: 45rem;
+  }
+  &_text {
+    @include font-paragraph-no-opacity;
+  }
+  &_picks {
+    padding: 3.2rem 0 8rem 0;
+    @include font-picks;
+  }
+  &_card {
+    max-width: 40.5rem;
+    &-wrapper {
+      padding: 2.4rem 3.2rem;
+      background-color: var(--Card-Bg);
+      &-title {
+        @include font-h4;
+      }
+      &-price {
+        @include number2;
+      }
+    }
+  }
+  &_btn {
+    @include btn;
+    margin-top: 4rem;
+  }
+}
