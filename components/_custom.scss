@@ -21,8 +21,26 @@
   padding: 0 0 0 4rem;
 }
 
+// HEADER DESKTOP
+
 // HEADEAR MOBILE
 
 .custom-mobile-nav-ul {
   gap: 2rem;
 }
+
+// HEADEAR MOBILE
+
+// SECTION SERVING
+
+.custom-serving-row {
+  padding-top: 12.8rem;
+}
+
+@media (max-width: $md) {
+  .custom-serving-row {
+    padding-top: 0rem;
+  }
+}
+
+// SECTION SERVING
