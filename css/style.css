@@ -60,6 +60,10 @@
   padding: 0;
 }
 
+.menu-page-custom-row {
+  padding: 3.2rem 0rem;
+}
+
 :root {
   --White: #fff;
   --Colour-100: #b8b8b8;
@@ -748,6 +752,31 @@
 }
 .footer_contact:hover {
   color: var(--Orange);
+}
+
+:root {
+  --White: #fff;
+  --Colour-100: #b8b8b8;
+  --Colour-200: #ffb577;
+  --Orange: #ffc492;
+  --Background: #19161b;
+  --Light-Blue: #c4e4ea;
+  --Card-Bg: #1f1d21;
+}
+
+.menu_tabs-list {
+  flex-wrap: wrap;
+  gap: 3.2rem;
+  margin: 14.4rem 0rem 6.4rem 1.6rem;
+}
+.menu_tabs-list--item {
+  color: var(--White);
+  font-family: "Playfair Display";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  opacity: 0.6;
 }
 
 :root {

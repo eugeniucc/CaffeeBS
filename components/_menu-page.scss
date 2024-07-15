@@ -1,0 +1,16 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.menu {
+  &_tabs {
+    &-list {
+      flex-wrap: wrap;
+      gap: 3.2rem;
+      margin: 14.4rem 0rem 6.4rem 1.6rem;
+      &--item {
+        @include font-h4;
+        opacity: 0.6;
+      }
+    }
+  }
+}
