@@ -1,0 +1,41 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: 1280px) {
+  .latest {
+    &_card {
+      &-wrapper {
+        &--title {
+          height: 12rem;
+          font-size: 2.6rem;
+          line-height: 3.6rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $lg) {
+  .latest {
+    padding: 4rem 0;
+    &_title {
+      text-align: center;
+      padding-bottom: 5rem;
+    }
+    &_card {
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+  }
+}
+@media (max-width: $md) {
+  .latest {
+    &_card {
+      &-wrapper {
+        &--title {
+          height: auto;
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+}

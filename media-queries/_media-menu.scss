@@ -20,6 +20,32 @@
   }
 }
 
+@media (max-width: $lg) {
+  .menu {
+    padding: 4rem 0;
+    &_card {
+      &-wrapper {
+        height: 8rem;
+      }
+    }
+  }
+}
+@media (max-width: $lg) {
+  .menu {
+    &_card {
+      &-wrapper {
+        &-title {
+          font-size: 1.6rem;
+          padding-right: 1rem;
+        }
+        &-price {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: $md) {
   .menu {
     &_card {

@@ -1,0 +1,31 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.latest {
+  padding: 8rem 0;
+  background-color: var(--Background);
+  &_title {
+    @include font-h2;
+    padding-bottom: 6.4rem;
+  }
+  &_card {
+    background-color: var(--Card-Bg);
+    max-width: 40.5rem;
+    &-wrapper {
+      padding: 3.2rem;
+      &--date {
+        @include font-date;
+      }
+      &--title {
+        @include font-h3;
+        padding: 0.8rem 0 1.6rem 0;
+      }
+      &--text {
+        @include font-paragraph-no-opacity;
+      }
+    }
+    &-link {
+      text-decoration: none;
+    }
+  }
+}

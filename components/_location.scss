@@ -1,0 +1,30 @@
+@import "../scss/animations/btn";
+@import "../scss/mixins/mixins";
+
+.location {
+  padding: 8rem 0;
+  background-color: var(--Background);
+  &_content {
+    background-color: var(--Card-Bg);
+    &-list {
+      gap: 3.2rem;
+      padding: 8rem 0 8rem 6.4rem;
+      &--title {
+        @include font-h4;
+      }
+      &--text {
+        @include font-paragraph-no-opacity;
+      }
+    }
+  }
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+.leaflet-popup-content {
+  font-size: 2rem;
+  margin: 1.5rem 2rem;
+  width: 100% !important;
+}

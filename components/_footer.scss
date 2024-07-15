@@ -1,0 +1,37 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.footer {
+  padding: 8rem 0 3rem 0;
+  background-color: var(--Background);
+  &_wrapper {
+    border-bottom: 0.1rem solid var(--Colour-100);
+  }
+  &_list {
+    gap: 4rem;
+    margin: 4.5rem 0 3.2rem 0;
+    &-link {
+      @include nav-paragraph;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: var(--Orange);
+      }
+    }
+  }
+  &_rights {
+    @include footer-rights;
+  }
+  &_social {
+    gap: 2.2rem;
+  }
+  &_contact {
+    @include label-med;
+    text-decoration: none;
+    gap: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: var(--Orange);
+    }
+  }
+}

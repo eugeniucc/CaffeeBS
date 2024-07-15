@@ -1,0 +1,26 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $lg) {
+  .footer {
+    padding: 4rem 0;
+    &_rights {
+      text-align: center;
+      padding-bottom: 2.4rem;
+    }
+    &_contact {
+      padding-top: 2.4rem;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .footer {
+    &_list {
+      flex-direction: column;
+      align-items: center;
+      gap: 2.4rem;
+    }
+  }
+}
