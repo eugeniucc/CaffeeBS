@@ -1,0 +1,21 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $lg) {
+  .video {
+    &_content {
+      padding: 5rem;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .video {
+    &_content {
+      padding: 3rem;
+      &-wrapper {
+        padding: 4.2rem 0 2.2rem 0;
+      }
+    }
+  }
+}

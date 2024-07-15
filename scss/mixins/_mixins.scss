@@ -123,3 +123,18 @@
   font-weight: 700;
   line-height: 2.1rem;
 }
+@mixin display01 {
+  color: var(--White);
+  font-family: Gilroy-Bold;
+  font-size: 7.2rem;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin label-extra-small {
+  color: var(--White);
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6rem;
+}

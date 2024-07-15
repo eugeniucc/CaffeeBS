@@ -1,0 +1,45 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.video {
+  background-color: var(--Background);
+  padding: 8rem 0;
+  &_content {
+    padding: 8rem;
+    background-color: var(--Card-Bg);
+    &-char {
+      @include display01;
+      height: 3rem;
+      padding-bottom: 5rem;
+    }
+    &-text {
+      @include font-paragraph-no-opacity;
+    }
+    &-descr {
+      @include label-extra-small;
+    }
+    &-wrapper {
+      padding: 7.2rem 0 2.2rem 0;
+      border-bottom: 0.1rem solid rgba(255, 255, 255, 0.24);
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 5rem;
+        height: 0.2rem;
+        background-color: var(--White);
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+  &_wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  &_full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
