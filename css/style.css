@@ -764,6 +764,12 @@
   --Card-Bg: #1f1d21;
 }
 
+.menu_card {
+  width: calc(33.33% - 32px);
+}
+.menu_tabs-wrapper {
+  gap: 3.2rem;
+}
 .menu_tabs-list {
   flex-wrap: wrap;
   gap: 3.2rem;
@@ -777,6 +783,11 @@
   font-weight: 700;
   line-height: 3rem;
   opacity: 0.6;
+  cursor: pointer;
+}
+
+.menu_tabs-list--item.active {
+  opacity: 1;
 }
 
 :root {

@@ -89,7 +89,9 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
-    <script src="./js/leaflet.js"></script>
+    <script defer src="./js/leaflet.js"></script>
+    <!-- TABS -->
+    <script defer src="./js/tabs.js"></script>
     <!-- MY STYLES -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
@@ -253,199 +255,187 @@
         </div>
         <div class="menu_tabs">
           <ul class="menu_tabs-list d-flex">
-            <li class="menu_tabs-list--item">All</li>
-            <li class="menu_tabs-list--item">Fast Food</li>
-            <li class="menu_tabs-list--item">Cofee</li>
-            <li class="menu_tabs-list--item">Cocktails</li>
-            <li class="menu_tabs-list--item">Quafe Cake</li>
-            <li class="menu_tabs-list--item">Snacks</li>
+            <li class="menu_tabs-list--item active" data-category="All">All</li>
+            <li class="menu_tabs-list--item" data-category="FastFood">
+              Fast Food
+            </li>
+            <li class="menu_tabs-list--item" data-category="Coffee">Coffee</li>
+            <li class="menu_tabs-list--item" data-category="Cocktails">
+              Cocktails
+            </li>
+            <li class="menu_tabs-list--item" data-category="QuafeCake">
+              Quafe Cake
+            </li>
+            <li class="menu_tabs-list--item" data-category="Snacks">Snacks</li>
           </ul>
         </div>
-        <div class="row menu-custom-row">
-          <div class="col-md-4 col-xs-12">
-            <div class="menu_card">
-              <img
-                class="menu_card-img d-block w-100"
-                src="./img/menu1.png"
-                alt="Drp Cofee"
-              />
-              <div
-                class="menu_card-wrapper d-flex justify-content-between align-items-center"
-              >
-                <h4 class="menu_card-wrapper-title">Drp Cofee</h4>
-                <p class="menu_card-wrapper-price">$08.85</p>
-              </div>
+
+        <div class="menu_tabs-wrapper d-flex flex-wrap">
+          <div class="menu_card" data-category="Coffee">
+            <img
+              class="menu_card-img d-block w-100"
+              src="./img/menu1.png"
+              alt="Drp Coffee"
+            />
+            <div
+              class="menu_card-wrapper d-flex justify-content-between align-items-center"
+            >
+              <h4 class="menu_card-wrapper-title">Drp Coffee</h4>
+              <p class="menu_card-wrapper-price">$08.85</p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-12">
-            <div class="menu_card">
-              <img
-                class="menu_card-img d-block w-100"
-                src="./img/menu2.png"
-                alt="Choco Cup Cake"
-              />
-              <div
-                class="menu_card-wrapper d-flex justify-content-between align-items-center"
-              >
-                <h4 class="menu_card-wrapper-title">Choco Cup Cake</h4>
-                <p class="menu_card-wrapper-price">$4.85</p>
-              </div>
+
+          <div class="menu_card" data-category="QuafeCake">
+            <img
+              class="menu_card-img d-block w-100"
+              src="./img/menu2.png"
+              alt="Choco Cup Cake"
+            />
+            <div
+              class="menu_card-wrapper d-flex justify-content-between align-items-center"
+            >
+              <h4 class="menu_card-wrapper-title">Choco Cup Cake</h4>
+              <p class="menu_card-wrapper-price">$4.85</p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-12">
-            <div class="menu_card">
-              <img
-                class="menu_card-img d-block w-100"
-                src="./img/menu3.png"
-                alt="Drp Cofee"
-              />
-              <div
-                class="menu_card-wrapper d-flex justify-content-between align-items-center"
-              >
-                <h4 class="menu_card-wrapper-title">Chicken Burger</h4>
-                <p class="menu_card-wrapper-price">$8.85</p>
-              </div>
+
+          <div class="menu_card" data-category="FastFood">
+            <img
+              class="menu_card-img d-block w-100"
+              src="./img/menu3.png"
+              alt="Drp Coffee"
+            />
+            <div
+              class="menu_card-wrapper d-flex justify-content-between align-items-center"
+            >
+              <h4 class="menu_card-wrapper-title">Chicken Burger</h4>
+              <p class="menu_card-wrapper-price">$8.85</p>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-xs-12">
-            <div class="menu_card">
-              <img
-                class="menu_card-img d-block w-100"
-                src="./img/menu4.png"
-                alt="Drp Cofee"
-              />
-              <div
-                class="menu_card-wrapper d-flex justify-content-between align-items-center"
-              >
-                <h4 class="menu_card-wrapper-title">French Fries</h4>
-                <p class="menu_card-wrapper-price">$7.85</p>
-              </div>
+
+          <div class="menu_card" data-category="FastFood">
+            <img
+              class="menu_card-img d-block w-100"
+              src="./img/menu4.png"
+              alt="Drp Coffee"
+            />
+            <div
+              class="menu_card-wrapper d-flex justify-content-between align-items-center"
+            >
+              <h4 class="menu_card-wrapper-title">French Fries</h4>
+              <p class="menu_card-wrapper-price">$7.85</p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-12">
-            <div class="menu_card">
-              <img
-                class="menu_card-img d-block w-100"
-                src="./img/menu5.png"
-                alt="Sandwitch"
-              />
-              <div
-                class="menu_card-wrapper d-flex justify-content-between align-items-center"
-              >
-                <h4 class="menu_card-wrapper-title">Sandwitch</h4>
-                <p class="menu_card-wrapper-price">$3.97</p>
-              </div>
+
+          <div class="menu_card" data-category="FastFood">
+            <img
+              class="menu_card-img d-block w-100"
+              src="./img/menu5.png"
+              alt="Sandwitch"
+            />
+            <div
+              class="menu_card-wrapper d-flex justify-content-between align-items-center"
+            >
+              <h4 class="menu_card-wrapper-title">Sandwitch</h4>
+              <p class="menu_card-wrapper-price">$3.97</p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-12">
-            <div class="menu_card">
-              <img
-                class="menu_card-img d-block w-100"
-                src="./img/menu6.png"
-                alt="Chinese Soup"
-              />
-              <div
-                class="menu_card-wrapper d-flex justify-content-between align-items-center"
-              >
-                <h4 class="menu_card-wrapper-title">Chinese Soup</h4>
-                <p class="menu_card-wrapper-price">$8.85</p>
-              </div>
+
+          <div class="menu_card" data-category="FastFood">
+            <img
+              class="menu_card-img d-block w-100"
+              src="./img/menu6.png"
+              alt="Chinese Soup"
+            />
+            <div
+              class="menu_card-wrapper d-flex justify-content-between align-items-center"
+            >
+              <h4 class="menu_card-wrapper-title">Chinese Soup</h4>
+              <p class="menu_card-wrapper-price">$8.85</p>
             </div>
           </div>
-        </div>
-        <div class="row menu-page-custom-row">
-          <div class="col-md-4 col-xs-12">
-            <div class="menu_card">
-              <img
-                class="menu_card-img d-block w-100"
-                src="./img/menu7.png"
-                alt="Drp Cofee"
-              />
-              <div
-                class="menu_card-wrapper d-flex justify-content-between align-items-center"
-              >
-                <h4 class="menu_card-wrapper-title">Quafe Brade</h4>
-                <p class="menu_card-wrapper-price">$7.85</p>
-              </div>
+
+          <div class="menu_card" data-category="QuafeCake">
+            <img
+              class="menu_card-img d-block w-100"
+              src="./img/menu7.png"
+              alt="Drp Coffee"
+            />
+            <div
+              class="menu_card-wrapper d-flex justify-content-between align-items-center"
+            >
+              <h4 class="menu_card-wrapper-title">Quafe Brade</h4>
+              <p class="menu_card-wrapper-price">$7.85</p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-12">
-            <div class="menu_card">
-              <img
-                class="menu_card-img d-block w-100"
-                src="./img/menu8.png"
-                alt="Choco Cup Cake"
-              />
-              <div
-                class="menu_card-wrapper d-flex justify-content-between align-items-center"
-              >
-                <h4 class="menu_card-wrapper-title">Dalgona Cofee</h4>
-                <p class="menu_card-wrapper-price">$4.97</p>
-              </div>
+
+          <div class="menu_card" data-category="QuafeCake">
+            <img
+              class="menu_card-img d-block w-100"
+              src="./img/menu8.png"
+              alt="Choco Cup Cake"
+            />
+            <div
+              class="menu_card-wrapper d-flex justify-content-between align-items-center"
+            >
+              <h4 class="menu_card-wrapper-title">Dalgona Coffee</h4>
+              <p class="menu_card-wrapper-price">$4.97</p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-12">
-            <div class="menu_card">
-              <img
-                class="menu_card-img d-block w-100"
-                src="./img/menu9.png"
-                alt="Drp Cofee"
-              />
-              <div
-                class="menu_card-wrapper d-flex justify-content-between align-items-center"
-              >
-                <h4 class="menu_card-wrapper-title">Chowmin Noodle</h4>
-                <p class="menu_card-wrapper-price">$8.85</p>
-              </div>
+
+          <div class="menu_card" data-category="FastFood">
+            <img
+              class="menu_card-img d-block w-100"
+              src="./img/menu9.png"
+              alt="Drp Coffee"
+            />
+            <div
+              class="menu_card-wrapper d-flex justify-content-between align-items-center"
+            >
+              <h4 class="menu_card-wrapper-title">Chowmin Noodle</h4>
+              <p class="menu_card-wrapper-price">$8.85</p>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-xs-12">
-            <div class="menu_card">
-              <img
-                class="menu_card-img d-block w-100"
-                src="./img/menu10.png"
-                alt="Drp Cofee"
-              />
-              <div
-                class="menu_card-wrapper d-flex justify-content-between align-items-center"
-              >
-                <h4 class="menu_card-wrapper-title">Coka Cola</h4>
-                <p class="menu_card-wrapper-price">$7.85</p>
-              </div>
+
+          <div class="menu_card" data-category="Cocktails">
+            <img
+              class="menu_card-img d-block w-100"
+              src="./img/menu10.png"
+              alt="Drp Coffee"
+            />
+            <div
+              class="menu_card-wrapper d-flex justify-content-between align-items-center"
+            >
+              <h4 class="menu_card-wrapper-title">Coka Cola</h4>
+              <p class="menu_card-wrapper-price">$7.85</p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-12">
-            <div class="menu_card">
-              <img
-                class="menu_card-img d-block w-100"
-                src="./img/menu11.png"
-                alt="Sandwitch"
-              />
-              <div
-                class="menu_card-wrapper d-flex justify-content-between align-items-center"
-              >
-                <h4 class="menu_card-wrapper-title">Fruit Salad</h4>
-                <p class="menu_card-wrapper-price">$3.97</p>
-              </div>
+
+          <div class="menu_card" data-category="Snacks">
+            <img
+              class="menu_card-img d-block w-100"
+              src="./img/menu11.png"
+              alt="Sandwitch"
+            />
+            <div
+              class="menu_card-wrapper d-flex justify-content-between align-items-center"
+            >
+              <h4 class="menu_card-wrapper-title">Fruit Salad</h4>
+              <p class="menu_card-wrapper-price">$3.97</p>
             </div>
           </div>
-          <div class="col-md-4 col-xs-12">
-            <div class="menu_card">
-              <img
-                class="menu_card-img d-block w-100"
-                src="./img/menu12.png"
-                alt="Chinese Soup"
-              />
-              <div
-                class="menu_card-wrapper d-flex justify-content-between align-items-center"
-              >
-                <h4 class="menu_card-wrapper-title">Cocktail</h4>
-                <p class="menu_card-wrapper-price">$8.85</p>
-              </div>
+
+          <div class="menu_card" data-category="Cocktails">
+            <img
+              class="menu_card-img d-block w-100"
+              src="./img/menu12.png"
+              alt="Chinese Soup"
+            />
+            <div
+              class="menu_card-wrapper d-flex justify-content-between align-items-center"
+            >
+              <h4 class="menu_card-wrapper-title">Cocktail</h4>
+              <p class="menu_card-wrapper-price">$8.85</p>
             </div>
           </div>
         </div>

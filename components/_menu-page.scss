@@ -2,7 +2,13 @@
 @import "../scss/variables/variables";
 
 .menu {
+  &_card {
+    width: calc(33.33% - 32px);
+  }
   &_tabs {
+    &-wrapper {
+      gap: 3.2rem;
+    }
     &-list {
       flex-wrap: wrap;
       gap: 3.2rem;
@@ -10,7 +16,12 @@
       &--item {
         @include font-h4;
         opacity: 0.6;
+        cursor: pointer;
       }
     }
   }
+}
+
+.menu_tabs-list--item.active {
+  opacity: 1;
 }
