@@ -115,6 +115,14 @@
   line-height: 3.2rem;
   opacity: 0.87;
 }
+@mixin number3 {
+  color: var(--White);
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.4rem;
+}
 @mixin font-picks {
   color: var(--Light-Blue);
   font-family: "Playfair Display";

@@ -1,0 +1,30 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $lg) {
+  .things {
+    &_title {
+      margin-bottom: 2.4rem;
+      text-align: center;
+      max-width: 100%;
+      &-second {
+        text-align: center;
+      }
+    }
+    &_text {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .things {
+    padding: 5rem 0rem;
+    &_title {
+      &-second {
+        font-size: 2rem;
+        line-height: 2.4rem;
+      }
+    }
+  }
+}

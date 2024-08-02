@@ -1,0 +1,42 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.history {
+  background-color: var(--Background);
+  &_wrapper {
+    padding: 8rem;
+    background-color: #1f1d22;
+  }
+  &_title {
+    @include font-h3;
+    padding-bottom: 7rem;
+    border-bottom: dashed var(--Colour-100);
+  }
+  &_card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    max-width: 24rem;
+    width: 100%;
+    &-year {
+      @include number3;
+      padding-top: 3.5rem;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 4.6rem;
+        height: 0.6rem;
+        background-color: var(--Orange);
+        top: -0.5rem;
+        left: -0.8rem;
+      }
+    }
+    &-milestone {
+      @include font-h4;
+    }
+    &-text {
+      @include font-paragraph-no-opacity;
+    }
+  }
+}

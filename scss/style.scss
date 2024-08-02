@@ -12,6 +12,11 @@
 @import "../components/location";
 @import "../components/footer";
 @import "../components/menu-page";
+@import "../components/know";
+@import "../components/best";
+@import "../components/history";
+@import "../components/things";
+@import "../components/story";
 
 // MEDIA QUERIES COMPONENTS
 @import "../media-queries/media-home";
@@ -22,6 +27,11 @@
 @import "../media-queries/media-latest";
 @import "../media-queries/media-location";
 @import "../media-queries/media-footer";
+@import "../media-queries/media-know";
+@import "../media-queries/media-best";
+@import "../media-queries/media-history";
+@import "../media-queries/media-things";
+@import "../media-queries/media-story";
 
 // MIXINS
 @import "../scss/mixins/mixins";

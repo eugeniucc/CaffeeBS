@@ -1,0 +1,21 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $lg) {
+  .history {
+    &_title {
+      border-bottom: none;
+      text-align: center;
+    }
+    &_card {
+      margin: 0 auto;
+      text-align: center;
+      &-year {
+        &::after {
+          display: none;
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}

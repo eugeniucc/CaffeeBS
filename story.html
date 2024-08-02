@@ -37,10 +37,10 @@
     <link rel="icon" href="./favicon.ico" />
     <!-- Подключение mask icon -->
     <!-- <link
-          rel="mask-icon"
-          href="./icons/safari-pinned-tab.svg"
-          color="#5bbad5"
-        /> -->
+      rel="mask-icon"
+      href="./icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    /> -->
     <!-- MS APP -->
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
@@ -63,19 +63,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
     <!-- LEAFLET MAPS -->
     <link
       rel="stylesheet"
@@ -90,8 +77,19 @@
       crossorigin=""
     ></script>
     <script defer src="./js/leaflet.js"></script>
-    <!-- TABS -->
-    <script defer src="./js/tabs.js"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- MY STYLES -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
@@ -240,204 +238,58 @@
         </div>
       </div>
     </header>
-    <section class="menu">
+    <section class="story">
       <div class="container-xxl">
-        <p class="menu_caption">OUR MENU</p>
-        <div class="row d-flex">
-          <div class="col-xl-6">
-            <h2 class="menu_title">Discover our menu chart</h2>
-          </div>
-          <div class="col-xl-6">
-            <p class="menu_text">
-              Through True Rich Attended does no end it his mother since
-              favourable real had half every him case in packages enquire we up
-              ecstatic.. Through True Rich Attended does no end it his mother
-            </p>
-          </div>
-        </div>
-        <div class="menu_tabs">
-          <ul class="menu_tabs-list d-flex">
-            <li class="menu_tabs-list--item active" data-category="All">All</li>
-            <li class="menu_tabs-list--item" data-category="FastFood">
-              Fast Food
-            </li>
-            <li class="menu_tabs-list--item" data-category="Coffee">Coffee</li>
-            <li class="menu_tabs-list--item" data-category="Cocktails">
-              Cocktails
-            </li>
-            <li class="menu_tabs-list--item" data-category="QuafeCake">
-              Quafe Cake
-            </li>
-            <li class="menu_tabs-list--item" data-category="Snacks">Snacks</li>
-          </ul>
-        </div>
-
-        <div class="menu_tabs-wrapper d-flex flex-wrap">
-          <div class="menu_card" data-category="Coffee">
-            <img
-              class="menu_card-img d-block w-100"
-              src="./img/menu1.png"
-              alt="Drp Coffee"
-            />
-            <div
-              class="menu_card-wrapper d-flex justify-content-between align-items-center"
-            >
-              <h4 class="menu_card-wrapper-title">Drp Coffee</h4>
-              <p class="menu_card-wrapper-price">$08.85</p>
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="story_wrapper">
+              <h1 class="story_wrapper-title">Our Story</h1>
+              <p class="story_wrapper-text">
+                Through True Rich Attended does no end it his mother since
+                favourable real had half every him case in packages enquire we
+                up ecstatic.
+              </p>
+            </div>
+            <div class="story_box d-flex justify-content-between gap-5">
+              <img
+                class="story_box-img--1"
+                src="./img/story1.png"
+                alt="Finsweet"
+              />
+              <img
+                class="story_box-img--2"
+                src="./img/story2.png"
+                alt="Finsweet"
+              />
             </div>
           </div>
-
-          <div class="menu_card" data-category="QuafeCake">
-            <img
-              class="menu_card-img d-block w-100"
-              src="./img/menu2.png"
-              alt="Choco Cup Cake"
-            />
-            <div
-              class="menu_card-wrapper d-flex justify-content-between align-items-center"
-            >
-              <h4 class="menu_card-wrapper-title">Choco Cup Cake</h4>
-              <p class="menu_card-wrapper-price">$4.85</p>
-            </div>
-          </div>
-
-          <div class="menu_card" data-category="FastFood">
-            <img
-              class="menu_card-img d-block w-100"
-              src="./img/menu3.png"
-              alt="Drp Coffee"
-            />
-            <div
-              class="menu_card-wrapper d-flex justify-content-between align-items-center"
-            >
-              <h4 class="menu_card-wrapper-title">Chicken Burger</h4>
-              <p class="menu_card-wrapper-price">$8.85</p>
-            </div>
-          </div>
-
-          <div class="menu_card" data-category="FastFood">
-            <img
-              class="menu_card-img d-block w-100"
-              src="./img/menu4.png"
-              alt="Drp Coffee"
-            />
-            <div
-              class="menu_card-wrapper d-flex justify-content-between align-items-center"
-            >
-              <h4 class="menu_card-wrapper-title">French Fries</h4>
-              <p class="menu_card-wrapper-price">$7.85</p>
-            </div>
-          </div>
-
-          <div class="menu_card" data-category="FastFood">
-            <img
-              class="menu_card-img d-block w-100"
-              src="./img/menu5.png"
-              alt="Sandwitch"
-            />
-            <div
-              class="menu_card-wrapper d-flex justify-content-between align-items-center"
-            >
-              <h4 class="menu_card-wrapper-title">Sandwitch</h4>
-              <p class="menu_card-wrapper-price">$3.97</p>
-            </div>
-          </div>
-
-          <div class="menu_card" data-category="FastFood">
-            <img
-              class="menu_card-img d-block w-100"
-              src="./img/menu6.png"
-              alt="Chinese Soup"
-            />
-            <div
-              class="menu_card-wrapper d-flex justify-content-between align-items-center"
-            >
-              <h4 class="menu_card-wrapper-title">Chinese Soup</h4>
-              <p class="menu_card-wrapper-price">$8.85</p>
-            </div>
-          </div>
-
-          <div class="menu_card" data-category="QuafeCake">
-            <img
-              class="menu_card-img d-block w-100"
-              src="./img/menu7.png"
-              alt="Drp Coffee"
-            />
-            <div
-              class="menu_card-wrapper d-flex justify-content-between align-items-center"
-            >
-              <h4 class="menu_card-wrapper-title">Quafe Brade</h4>
-              <p class="menu_card-wrapper-price">$7.85</p>
-            </div>
-          </div>
-
-          <div class="menu_card" data-category="QuafeCake">
-            <img
-              class="menu_card-img d-block w-100"
-              src="./img/menu8.png"
-              alt="Choco Cup Cake"
-            />
-            <div
-              class="menu_card-wrapper d-flex justify-content-between align-items-center"
-            >
-              <h4 class="menu_card-wrapper-title">Dalgona Coffee</h4>
-              <p class="menu_card-wrapper-price">$4.97</p>
-            </div>
-          </div>
-
-          <div class="menu_card" data-category="FastFood">
-            <img
-              class="menu_card-img d-block w-100"
-              src="./img/menu9.png"
-              alt="Drp Coffee"
-            />
-            <div
-              class="menu_card-wrapper d-flex justify-content-between align-items-center"
-            >
-              <h4 class="menu_card-wrapper-title">Chowmin Noodle</h4>
-              <p class="menu_card-wrapper-price">$8.85</p>
-            </div>
-          </div>
-
-          <div class="menu_card" data-category="Cocktails">
-            <img
-              class="menu_card-img d-block w-100"
-              src="./img/menu10.png"
-              alt="Drp Coffee"
-            />
-            <div
-              class="menu_card-wrapper d-flex justify-content-between align-items-center"
-            >
-              <h4 class="menu_card-wrapper-title">Coka Cola</h4>
-              <p class="menu_card-wrapper-price">$7.85</p>
-            </div>
-          </div>
-
-          <div class="menu_card" data-category="Snacks">
-            <img
-              class="menu_card-img d-block w-100"
-              src="./img/menu11.png"
-              alt="Sandwitch"
-            />
-            <div
-              class="menu_card-wrapper d-flex justify-content-between align-items-center"
-            >
-              <h4 class="menu_card-wrapper-title">Fruit Salad</h4>
-              <p class="menu_card-wrapper-price">$3.97</p>
-            </div>
-          </div>
-
-          <div class="menu_card" data-category="Cocktails">
-            <img
-              class="menu_card-img d-block w-100"
-              src="./img/menu12.png"
-              alt="Chinese Soup"
-            />
-            <div
-              class="menu_card-wrapper d-flex justify-content-between align-items-center"
-            >
-              <h4 class="menu_card-wrapper-title">Cocktail</h4>
-              <p class="menu_card-wrapper-price">$8.85</p>
+          <div class="col-lg-6 col-12">
+            <div class="story_content">
+              <h3 class="story_content-title">
+                One of the best cafes in <span>New York.</span>
+              </h3>
+              <p class="story_content-text">
+                Writing UX copies can be a little frustrating and confusing, and
+                sometimes we are unsure about how to get the right word. To
+                crack the code for the UX copies, we at Zeta Design wanted to
+                build a Figma plugin for the larger design community. The plugin
+                is called the Ghost UXWriter and has a set of UX copies
+                cataloged and categorized with a voice and tone variation
+                ranging from plain, casual to playful. The intention to build
+                this Figma plugin originated from our Medium blog post,
+                Designing voice and tone for error messages.
+              </p>
+              <p class="story_content-text">
+                Writing UX copies can be a little frustrating and confusing, and
+                sometimes we are unsure about how to get the right word. To
+                crack the code for the UX copies, we at Zeta Design wanted to
+                build a Figma plugin for the larger design community. The plugin
+                is called the Ghost UXWriter and has a set of UX copies
+                cataloged and categorized with a voice and tone variation
+                ranging from plain, casual to playful. The intention to build
+                this Figma plugin originated from our Medium blog post,
+                Designing voice.
+              </p>
             </div>
           </div>
         </div>

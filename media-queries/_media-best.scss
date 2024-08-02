@@ -1,0 +1,19 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $md) {
+  .best {
+    padding-bottom: 5rem;
+    &_wrapper {
+      padding: 6.2rem 0rem 6.2rem 4rem;
+    }
+  }
+}
+@media (max-width: $sm) {
+  .best {
+    &_wrapper {
+      padding: 6.2rem 0rem 6.2rem 2rem;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.best {
+  padding-bottom: 15.7rem;
+  background-color: var(--Background);
+  &_wrapper {
+    padding: 12.4rem 0rem 12.4rem 8rem;
+    background: linear-gradient(
+        97deg,
+        rgba(25, 22, 27, 0.92) 34.6%,
+        rgba(25, 22, 27, 0) 83.17%
+      ),
+      url("../../img/best-bg.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    &-title {
+      @include font-h2;
+      max-width: 43rem;
+      width: 100%;
+    }
+    &-title span {
+      color: var(--Orange);
+    }
+    &-text {
+      @include font-paragraph-no-opacity;
+      max-width: 43rem;
+      width: 100%;
+    }
+  }
+}

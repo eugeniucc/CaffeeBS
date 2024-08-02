@@ -1,0 +1,19 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.things {
+  background-color: var(--Background);
+  padding: 16rem 0rem;
+  &_title {
+    @include font-h2;
+    max-width: 54rem;
+    width: 100%;
+    &-second {
+      @include font-h3;
+      padding-bottom: 2.4rem;
+    }
+  }
+  &_text {
+    @include font-paragraph-no-opacity;
+  }
+}
