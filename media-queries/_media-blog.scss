@@ -1,2 +1,51 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $lg) {
+  .blog {
+    &_content {
+      max-width: 100%;
+      padding: 12rem 3.4rem 2rem 3.4rem;
+    }
+    &_more {
+      margin-top: 5rem;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .blog {
+    padding: 5rem 0rem;
+    &_content {
+      padding: 12rem 1.4rem 2rem 1.4rem;
+    }
+  }
+}
+@media (max-width: $sm) {
+  .blog {
+    &_content {
+      &-cover {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      &-box {
+        max-width: 100%;
+        width: 100%;
+      }
+      &-wrapper {
+        &--link {
+          align-self: self-start;
+        }
+      }
+    }
+    &_more {
+      &-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}

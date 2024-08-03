@@ -1,0 +1,81 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.tomatoes {
+  padding: 9.6rem 0rem 8rem 0rem;
+  background-color: var(--Background);
+  &_title {
+    @include font-h2;
+    max-width: 100rem;
+    width: 100%;
+    margin: 3.2rem auto 8rem auto;
+  }
+  &_post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.4rem;
+    max-width: 65rem;
+    width: 100%;
+    border-bottom: 0.1rem solid var(--Colour-100);
+    &-name {
+      margin: 0rem 2.4rem 0rem 1.2rem;
+      @include font-paragraph-no-opacity;
+    }
+    &-date {
+      @include font-paragraph-opacity;
+    }
+  }
+  &_img {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+  &_recipe {
+    max-width: 84.2rem;
+    width: 100%;
+    margin-bottom: 4rem;
+    &-title {
+      @include font-h3;
+      margin-bottom: 2.4rem;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+    &-text {
+      @include font-paragraph-no-opacity;
+    }
+  }
+  &_idea {
+    max-width: 84.2rem;
+    width: 100%;
+    margin-bottom: 4rem;
+    &-title {
+      @include font-h4;
+      margin-bottom: 4rem;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      &--text {
+        @include font-paragraph-no-opacity;
+      }
+    }
+  }
+  &_content {
+    max-width: 84.2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    &-title {
+      @include font-h3;
+    }
+    &-text {
+      @include font-paragraph-no-opacity;
+    }
+  }
+}

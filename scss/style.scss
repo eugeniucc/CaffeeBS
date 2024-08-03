@@ -18,6 +18,8 @@
 @import "../components/things";
 @import "../components/story";
 @import "../components/blog";
+@import "../components/tomatoes";
+@import "../components/contact";
 
 // MEDIA QUERIES COMPONENTS
 @import "../media-queries/media-home";
@@ -34,6 +36,8 @@
 @import "../media-queries/media-things";
 @import "../media-queries/media-story";
 @import "../media-queries/media-blog";
+@import "../media-queries/media-tomatoes";
+@import "../media-queries/media-contact";
 
 // MIXINS
 @import "../scss/mixins/mixins";

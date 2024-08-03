@@ -36,5 +36,7 @@
   &_btn {
     @include btn;
     margin-top: 4rem;
+    max-width: 17rem;
+    width: 100%;
   }
 }

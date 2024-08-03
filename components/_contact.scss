@@ -1,0 +1,84 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.contact {
+  padding: 9.6rem 0rem 8rem 0rem;
+  background-color: var(--Background);
+  &_wrapper {
+    padding-left: 11rem;
+  }
+  &_img {
+    max-width: 100%;
+    width: 100%;
+    &-l {
+      padding-top: 8.3rem;
+    }
+    &-r {
+      padding-bottom: 8.3rem;
+    }
+  }
+}
+
+.form_content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-bottom: 4rem;
+  &-title {
+    @include font-h2;
+  }
+  &-text {
+    @include font-paragraph-no-opacity;
+  }
+}
+
+.form_send {
+  padding: 2rem 3.2rem;
+  background-color: #27252d;
+  cursor: pointer;
+  border: none;
+  @include label-med;
+}
+
+#Name {
+  padding: 1.4rem 0rem 1.4rem 3.2rem;
+  @include font-paragraph-no-opacity;
+  color: #fff;
+  &:focus {
+    box-shadow: none;
+  }
+  &::placeholder {
+    color: #fff;
+  }
+  border-radius: 0rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+#Email {
+  padding: 1.4rem 0rem 1.4rem 3.2rem;
+  @include font-paragraph-no-opacity;
+  color: #fff;
+  &:focus {
+    box-shadow: none;
+  }
+  &::placeholder {
+    color: #fff;
+  }
+  border-radius: 0rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+#Textarea {
+  padding: 1.4rem 0rem 10.5rem 3.2rem;
+  @include font-paragraph-no-opacity;
+  color: #fff;
+  &:focus {
+    box-shadow: none;
+  }
+  &::placeholder {
+    color: #fff;
+  }
+  border-radius: 0rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}

@@ -50,5 +50,7 @@
   }
   &_btn {
     @include btn;
+    max-width: 17rem;
+    width: 100%;
   }
 }
