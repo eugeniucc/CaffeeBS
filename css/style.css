@@ -1071,6 +1071,161 @@
   --Card-Bg: #1f1d21;
 }
 
+.blog {
+  padding: 9.6rem 0rem 16rem 0rem;
+  background-color: var(--Background);
+}
+.blog_title {
+  color: var(--White);
+  font-family: "Playfair Display";
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.8rem;
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+@media (max-width: 992px) {
+  .blog_title {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .blog_title {
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+  }
+}
+.blog_trending {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  padding: 1.4rem 2.9rem;
+  background: rgba(255, 196, 146, 0.47);
+  -webkit-backdrop-filter: blur(9.5px);
+          backdrop-filter: blur(9.5px);
+}
+.blog_trending-text {
+  color: var(--White);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.blog_content {
+  background: linear-gradient(rgba(20, 17, 21, 0.81), rgba(20, 17, 21, 0.81)), url("../../img/blog-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 23.6rem 6.4rem 4rem 6.4rem;
+  max-width: 62.4rem;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.blog_content-title--link {
+  color: var(--White);
+  font-family: "Playfair Display";
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.8rem;
+  text-decoration: none;
+  margin-bottom: 4rem;
+  max-width: 35rem;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .blog_content-title--link {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .blog_content-title--link {
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+  }
+}
+.blog_content-wrapper--name {
+  color: var(--Colour-100);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+.blog_content-wrapper--date {
+  color: var(--Colour-100);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  opacity: 0.6;
+}
+.blog_content-wrapper--link {
+  color: var(--Colour-100);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  text-decoration: none;
+  color: #fff;
+}
+.blog_content-box {
+  display: flex;
+  gap: 1.6rem;
+}
+.blog_more {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.blog_more-card {
+  gap: 3.2rem;
+  align-items: center;
+}
+.blog_more-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 37.3rem;
+  width: 100%;
+  gap: 1.6rem;
+}
+.blog_more-wrapper--link {
+  color: var(--White);
+  font-family: "Playfair Display";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  text-decoration: none;
+}
+.blog_more-wrapper--text {
+  color: var(--Colour-100);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+:root {
+  --White: #fff;
+  --Colour-100: #b8b8b8;
+  --Colour-200: #ffb577;
+  --Orange: #ffc492;
+  --Background: #19161b;
+  --Light-Blue: #c4e4ea;
+  --Card-Bg: #1f1d21;
+}
+
 @media (max-width: 1200px) {
   .home {
     padding: 4rem 0;
@@ -1523,8 +1678,24 @@
   --Card-Bg: #1f1d21;
 }
 
+:root {
+  --White: #fff;
+  --Colour-100: #b8b8b8;
+  --Colour-200: #ffb577;
+  --Orange: #ffc492;
+  --Background: #19161b;
+  --Light-Blue: #c4e4ea;
+  --Card-Bg: #1f1d21;
+}
+
 * {
   box-sizing: border-box;
+}
+
+img,
+span,
+a {
+  display: block;
 }
 
 html {

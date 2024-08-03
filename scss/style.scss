@@ -17,6 +17,7 @@
 @import "../components/history";
 @import "../components/things";
 @import "../components/story";
+@import "../components/blog";
 
 // MEDIA QUERIES COMPONENTS
 @import "../media-queries/media-home";
@@ -32,6 +33,7 @@
 @import "../media-queries/media-history";
 @import "../media-queries/media-things";
 @import "../media-queries/media-story";
+@import "../media-queries/media-blog";
 
 // MIXINS
 @import "../scss/mixins/mixins";
@@ -47,6 +49,11 @@
 
 * {
   box-sizing: border-box;
+}
+img,
+span,
+a {
+  display: block;
 }
 
 // HTML

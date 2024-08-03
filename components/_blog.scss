@@ -1,0 +1,84 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.blog {
+  padding: 9.6rem 0rem 16rem 0rem;
+  background-color: var(--Background);
+  &_title {
+    @include font-h2;
+    text-align: center;
+    margin-bottom: 6.4rem;
+  }
+  &_trending {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    padding: 1.4rem 2.9rem;
+    background: rgba(255, 196, 146, 0.47);
+    backdrop-filter: blur(9.5px);
+    &-text {
+      @include trending;
+    }
+  }
+  &_content {
+    background: linear-gradient(rgba(20, 17, 21, 0.81), rgba(20, 17, 21, 0.81)),
+      url("../../img/blog-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 23.6rem 6.4rem 4rem 6.4rem;
+    max-width: 62.4rem;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    &-title {
+      &--link {
+        @include font-h2;
+        text-decoration: none;
+        margin-bottom: 4rem;
+        max-width: 35rem;
+        width: 100%;
+      }
+    }
+    &-wrapper {
+      &--name {
+        @include font-paragraph-no-opacity;
+      }
+      &--date {
+        @include font-paragraph-opacity;
+      }
+      &--link {
+        @include font-paragraph-no-opacity;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    &-box {
+      display: flex;
+      gap: 1.6rem;
+    }
+  }
+  &_more {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    &-card {
+      gap: 3.2rem;
+      align-items: center;
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      max-width: 37.3rem;
+      width: 100%;
+      gap: 1.6rem;
+      &--link {
+        @include font-h4;
+        text-decoration: none;
+      }
+      &--text {
+        @include font-paragraph-no-opacity;
+      }
+    }
+  }
+}

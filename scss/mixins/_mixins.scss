@@ -163,3 +163,13 @@
   line-height: 2.4rem;
   text-transform: capitalize;
 }
+@mixin trending {
+  color: var(--White);
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
