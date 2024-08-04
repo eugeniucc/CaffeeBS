@@ -104,47 +104,56 @@
               class="header_logo d-block"
               src="./icons/logo.svg"
               alt="Finsweet"
+              loading="lazy"
             />
           </div>
           <div class="col-lg-9 d-none d-lg-block">
-            <ul class="nav custom-nav-ul">
-              <li class="nav-item">
-                <a
-                  class="nav-link custom-nav-link nav-link-font"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link custom-nav-link nav-link-font"
-                  href="./menu.html"
-                  >Menu</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link custom-nav-link nav-link-font"
-                  href="./about.html"
-                  >About us</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link custom-nav-link nav-link-font" href="#"
-                  >Our Story</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link custom-nav-link nav-link-font" href="#"
-                  >Blog</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link custom-nav-link nav-link-font" href="#"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+            <nav class="nav">
+              <ul class="nav custom-nav-ul">
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-nav-link nav-link-font"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-nav-link nav-link-font"
+                    href="./menu.html"
+                    >Menu</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-nav-link nav-link-font"
+                    href="./about.html"
+                    >About us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-nav-link nav-link-font"
+                    href="./story.html"
+                    >Our Story</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-nav-link nav-link-font"
+                    href="./blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-nav-link nav-link-font"
+                    href="./contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
           <div class="col-lg-2 d-none d-lg-block">
             <div class="header_copy d-flex justify-content-end">
@@ -175,6 +184,7 @@
               class="header_logo d-block mx-auto pb-5"
               src="./icons/logo.svg"
               alt="Finsweet"
+              loading="lazy"
             />
           </div>
           <div class="col-lg-9 d-lg-none d-sm-block">
@@ -350,7 +360,12 @@
                   </p>
                 </div>
               </div>
-              <button class="about_btn" type="button">
+              <a
+                href="./menu.html"
+                class="about_btn d-flex gap-3"
+                type="button"
+                target="_blank"
+              >
                 View Menu
                 <span class="about_btn-span"
                   ><svg
@@ -366,7 +381,7 @@
                     />
                   </svg>
                 </span>
-              </button>
+              </a>
             </div>
           </div>
           <div class="col-lg-6 d-none d-xl-flex justify-content-between">
@@ -374,11 +389,13 @@
               class="about_img-bot"
               src="./img/know1.png"
               alt="Finsweet restaurant"
+              loading="lazy"
             />
             <img
               class="about_img-top"
               src="./img/know2.png"
               alt="Finsweet restaurant"
+              loading="lazy"
             />
           </div>
         </div>
@@ -523,22 +540,30 @@
           /></span>
           <ul class="footer_list d-flex justify-content-center">
             <li class="footer_list-item">
-              <a href="#" class="footer_list-link" target="_blank">Home</a>
+              <a href="./index.html" class="footer_list-link">Home</a>
             </li>
             <li class="footer_list-item">
-              <a href="#" class="footer_list-link" target="_blank">Menu</a>
+              <a href="./menu.html" class="footer_list-link" target="_blank"
+                >Menu</a
+              >
             </li>
             <li class="footer_list-item">
-              <a href="#" class="footer_list-link" target="_blank">About us</a>
+              <a href="./about.html" class="footer_list-link" target="_blank"
+                >About us</a
+              >
             </li>
             <li class="footer_list-item">
-              <a href="#" class="footer_list-link" target="_blank">Our story</a>
+              <a href="./story.html" class="footer_list-link" target="_blank"
+                >Our story</a
+              >
             </li>
             <li class="footer_list-item">
-              <a href="#" class="footer_list-link" target="_blank">Blog</a>
+              <a href="./blog.html" class="footer_list-link" target="_blank"
+                >Blog</a
+              >
             </li>
             <li class="footer_list-item">
-              <a href="#" class="footer_list-link" target="_blank"
+              <a href="./contact.html" class="footer_list-link" target="_blank"
                 >Contact us</a
               >
             </li>
